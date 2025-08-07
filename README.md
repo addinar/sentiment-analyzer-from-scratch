@@ -13,7 +13,7 @@ Given that this model was developed from scratch using limited samples, it is pr
 ## Model Performance with Different Learning Rates
 
 ### Learning Rate of 1e-03 (`sentiment_analyzer_1.pkl`)
-Within the 92 samples in the test dataset, this model had an average accuracy of 72.77%.
+Within the 92 samples in the test dataset, this version had an average accuracy of 72.77%.
 ![metrics for 1e-03](assets/1e_03_1.png)
 ![epoch loss for 1e-03](assets/1e_03_2.png)
 ![accuracy by class for 1e-03](assets/1e_03_3.png)
