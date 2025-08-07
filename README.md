@@ -32,9 +32,9 @@ Within the 92 samples in the test dataset, this version had an average accuracy 
 
 ### Learning Rate of 2e-3 (`sentiment_analyzer_4.pkl`)
 Within the 92 samples in the test dataset, this version had an average accuracy of 70.6%.
-![metrics for 2e-3](assets/2e-3_1.png)
-![epoch losses for 2e-3](assets/2e-3_2.png)
-![accuracy by class for 2e-3](assets/2e-3_3.png)
+![metrics for 2e-3](assets/2e_3_1.png)
+![epoch losses for 2e-3](assets/2e_3_2.png)
+![accuracy by class for 2e-3](assets/2e_3_3.png)
 
 ## Installation & Running the Model
 Clone the repository:
