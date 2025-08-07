@@ -18,4 +18,12 @@ Given that this model was developed from scratch using limited samples, it is pr
 ![accuracy by class for 1e-03](assets/1e_03_3.png)
 
 ## Installation & Running the Model
-Clone the repository
+Clone the repository:
+```
+https://github.com/addinar/sentiment-analyzer-from-scratch.git
+```
+
+After cloning the repository, simply follow the instructions in the demo notebook, saved as `notebooks/sentiment_analyzer_demo.ipynb`.
+
+## License
+Distributed under MIT License.
