@@ -18,6 +18,8 @@ Within the 92 samples in the test dataset, this model had an average accuracy of
 ![epoch loss for 1e-03](assets/1e_03_2.png)
 ![accuracy by class for 1e-03](assets/1e_03_3.png)
 
+[The rest are in the works].
+
 ## Installation & Running the Model
 Clone the repository:
 ```
