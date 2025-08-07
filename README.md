@@ -13,12 +13,28 @@ Given that this model was developed from scratch using limited samples, it is pr
 ## Model Performance with Different Learning Rates
 
 ### Learning Rate of 1e-3 (`sentiment_analyzer_1.pkl`)
-Within the 92 samples in the test dataset, this version had an average accuracy of 72.77%.
+Within the 92 samples in the test dataset, this version had an average accuracy of 79.1%.
 ![metrics for 1e-3](assets/1e_3_1.png)
 ![epoch losses for 1e-3](assets/1e_3_2.png)
 ![accuracy by class for 1e-3](assets/1e_3_3.png)
 
-[The rest are in the works].
+### Learning Rate of 1e-2 (`sentiment_analyzer_2.pkl`)
+Within the 92 samples in the test dataset, this version had an average accuracy of 76.3%.
+![metrics for 1e-2](assets/1e_2_1.png)
+![epoch losses for 1e-2](assets/1e_2_2.png)
+![accuracy by class for 1e-2](assets/1e_2_3.png)
+
+### Learning Rate of 1e-4 (`sentiment_analyzer_3.pkl`)
+Within the 92 samples in the test dataset, this version had an average accuracy of 80.1%.
+![metrics for 1e-4](assets/1e_4_1.png)
+![epoch losses for 1e-4](assets/1e_4_2.png)
+![accuracy by class for 1e-4](assets/1e_4_3.png)
+
+### Learning Rate of 2e-3 (`sentiment_analyzer_4.pkl`)
+Within the 92 samples in the test dataset, this version had an average accuracy of 70.6%.
+![metrics for 2e-3](assets/2e-3_1.png)
+![epoch losses for 2e-3](assets/2e-3_2.png)
+![accuracy by class for 2e-3](assets/2e-3_3.png)
 
 ## Installation & Running the Model
 Clone the repository:
