@@ -1,9 +1,9 @@
 # sentiment-analyzer-from-scratch
 
 ## Description
-This is a simple sentiment analysis model made entirely from numPy, re, and NLTK alone. During development, pandas and matplotlib were also used. The model uses self-made embeddings, positional encodings, custom transformer architecture, and logits. It employs several concepts from calculus and linear algebra to perform the forward and backward passes. 
+This is a simple sentiment analysis model made almost entirely from numPy, with a little help from NLTK. During development and testing, pandas and matplotlib were also used. The model takes an inputted text and classifies it to one of three sentiments - negative, neutral, or positive.
 
-The model was trained on 417 entries of [this dataset](https://www.kaggle.com/datasets/nursyahrina/chat-sentiment-dataset) from KaggleHub. It takes a test and classifies it to one of three sentiments - negative, neutral, or positive.
+The model was trained on 417 entries of [this dataset](https://www.kaggle.com/datasets/nursyahrina/chat-sentiment-dataset) from KaggleHub. It uses jointly optimized embeddings and weights, positional encoding, custom transformer architecture, and logits. It employs several concepts from calculus and linear algebra to perform the forward and backward passes. 
 
 Given that this model was developed from scratch using limited samples, it is primitive and makes the best predictions from simple, straightforward sentences, similar to the ones you can see in the dataset.
 
