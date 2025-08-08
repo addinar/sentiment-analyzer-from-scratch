@@ -8,7 +8,7 @@ The model was trained on 417 entries of [this dataset](https://www.kaggle.com/da
 Given that this model was developed from scratch using limited samples, it is primitive and makes the best predictions from simple, straightforward sentences, similar to the ones you can see in the dataset.
 
 ## How it Works
-![dataset diagram](assets/ds_diagram.png)
+![dataset diagram](assets/ds_split_diagram.png)
 ![forward and backward pass diagram](assets/f_b_diagram.png)
 
 ## Model Performance with Different Learning Rates
