@@ -10,7 +10,6 @@ Given that this model was developed from scratch using limited samples, it is pr
 ## How it Works
 The data was split into training and testing sets, then tokenized. Each token was further lemmatized then mapped to a unique 128-dimension embedding vector. An input sentence can be represented as an embedding matrix, and can subsequently be augmented with positional encoding. The model's architecture itself consists of two consecutive Transformer blocks, each equipped with four-headed self-attention mechanisms, feed-forward networks, and LayerNorm. The final hidden state would pass through a linear layer, which would then transformed into a probability distribution vector using softmax. The index with the highest probabibility would then be mapped to its corresponding sentiment label.  
 
-![dataset diagram](assets/ds_split_diagram.png)
 ![forward and backward pass diagram](assets/f_b_diagram.png)
 
 The main difference between my transformer encoder block and traditional encoders, is that I normalized concatenated attention scores right before applying them to the embedding and following through with LayerNorm, as a way to stabilize the scores among the heads. This technique has visibly outputted better final training losses and accuracy scores in testing samples.  
