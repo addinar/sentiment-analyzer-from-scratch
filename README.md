@@ -1,7 +1,7 @@
 # sentiment-analyzer-from-scratch
 
 ## Description
-This is a simple sentiment analysis model made entirely from numPy, re, and NLTK alone. During development, pandas and matplotlib were also used. The model uses self-made embeddings, positional encodings, custom transformer architecture, and logits. It employs several concepts from calculus and linear algebra to perform the forward and backward passes. 
+This is a simple sentiment analysis model made entirely from numPy, re, and NLTK alone. During development, pandas and matplotlib were also used. The model uses self-made embeddings, positional encodings, custom transformer encoder architecture, and logits. It employs several concepts from calculus and linear algebra to perform the forward and backward passes. 
 
 The model was trained on 417 entries of [this dataset](https://www.kaggle.com/datasets/nursyahrina/chat-sentiment-dataset) from KaggleHub. It takes a test and classifies it to one of three sentiments - negative, neutral, or positive.
 
@@ -10,6 +10,8 @@ Given that this model was developed from scratch using limited samples, it is pr
 ## How it Works
 ![dataset diagram](assets/ds_split_diagram.png)
 ![forward and backward pass diagram](assets/f_b_diagram.png)
+
+The main difference between my transformer encoder block and traditional encoders, is that I normalize concatenated attention scores right before applying them to the embedding and following through with LayerNorm, as a way to stabilize the scores among the heads. This tweak has visibly outputted better final training losses and accuracy scores in testing samples.  
 
 ## Model Performance with Different Learning Rates
 
