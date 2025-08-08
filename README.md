@@ -3,7 +3,7 @@
 ## Description
 This is a simple sentiment analysis model made almost entirely from numPy, with a little help from NLTK. During development and testing, pandas and matplotlib were also used. The model takes in an inputted text and classifies it to one of three sentiments: negative, neutral, or positive.
 
-The model was trained on 452 samples of [this dataset](https://www.kaggle.com/datasets/nursyahrina/chat-sentiment-dataset) from KaggleHub, and tested with the remaining 92 samples. It uses jointly optimized embeddings and weights, positional encoding, custom transformer architecture, and logits. Several concepts from calculus and linear algebra were applied to execute the forward and backward passes. 
+The model was trained on 452 samples of [this dataset](https://www.kaggle.com/datasets/nursyahrina/chat-sentiment-dataset) from KaggleHub, and tested with the remaining 92 samples. It uses jointly optimized embeddings and weights, positional encoding, custom transformer architecture, and logits. Several concepts from multivariable calculus and linear algebra were applied to execute the forward and backward passes. 
 
 Given that this model was developed from scratch using limited samples, it is primitive and makes the best predictions from simple, straightforward sentences, similar to the ones you can see in the dataset.
 
