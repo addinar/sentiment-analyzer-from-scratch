@@ -17,7 +17,7 @@ The main difference between my transformer encoder block and traditional encoder
 ## Model Performance with Different Learning Rates
 
 ### Learning Rate of 1e-3 (`sentiment_analyzer_1.pkl`)
-Within the 92 samples in the test dataset, this version had an average accuracy of 79.1%.
+Within the 92 samples in the test dataset, this version had an average accuracy of 79.8%.
 ![metrics for 1e-3](assets/1e_3_1.png)
 ![epoch losses for 1e-3](assets/1e_3_2.png)
 ![accuracy by class for 1e-3](assets/1e_3_3.png)
