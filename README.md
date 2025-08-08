@@ -1,17 +1,19 @@
 # sentiment-analyzer-from-scratch
 
 ## Description
-This is a simple sentiment analysis model made entirely from numPy, re, and NLTK alone. During development, pandas and matplotlib were also used. The model uses self-made embeddings, positional encodings, custom transformer architecture, and logits. It employs several concepts from calculus and linear algebra to perform the forward and backward passes. 
+This is a simple sentiment analysis model made almost entirely from numPy, with a little help from NLTK. During development and testing, pandas and matplotlib were also used. The model takes in an inputted text and classifies it to one of three sentiments: negative, neutral, or positive.
 
-The model was trained on 417 entries of [this dataset](https://www.kaggle.com/datasets/nursyahrina/chat-sentiment-dataset) from KaggleHub. It uses jointly optimized embeddings and weights, positional encoding, custom transformer architecture, and logits. It employs several concepts from calculus and linear algebra to perform the forward and backward passes. 
+The model was trained on 452 samples of [this dataset](https://www.kaggle.com/datasets/nursyahrina/chat-sentiment-dataset) from KaggleHub, and tested with the remaining 92 samples. It uses jointly optimized embeddings and weights, positional encoding, custom transformer architecture, and logits. Several concepts from calculus and linear algebra were applied to execute the forward and backward passes. 
 
 Given that this model was developed from scratch using limited samples, it is primitive and makes the best predictions from simple, straightforward sentences, similar to the ones you can see in the dataset.
 
 ## How it Works
+The data was split into training and testing sets, then tokenized. Each token was further lemmatized then mapped to a unique 128-dimension embedding vector. An input sentence can be represented as an embedding matrix, and can subsequently be augmented with positional encoding. The model's architecture itself consists of two consecutive Transformer blocks, each equipped with four-headed self-attention mechanisms, feed-forward networks, and LayerNorm. The final hidden state was passed through a linear layer, which was then transformed into a probability distribution vector using softmax. The index with the highest probabibility is then mapped to its corresponding sentiment label.  
+
 ![dataset diagram](assets/ds_split_diagram.png)
 ![forward and backward pass diagram](assets/f_b_diagram.png)
 
-The main difference between my transformer encoder block and traditional encoders, is that I normalize concatenated attention scores right before applying them to the embedding and following through with LayerNorm, as a way to stabilize the scores among the heads. This tweak has visibly outputted better final training losses and accuracy scores in testing samples.  
+The main difference between my transformer encoder block and traditional encoders, is that I normalized concatenated attention scores right before applying them to the embedding and following through with LayerNorm, as a way to stabilize the scores among the heads. This technique has visibly outputted better final training losses and accuracy scores in testing samples.  
 
 ## Model Performance with Different Learning Rates
 
