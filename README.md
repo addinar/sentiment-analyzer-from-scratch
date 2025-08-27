@@ -5,7 +5,7 @@ This is a simple sentiment analysis model made almost entirely from numPy, with 
 
 The model was trained on 452 samples of [this dataset](https://www.kaggle.com/datasets/nursyahrina/chat-sentiment-dataset) from KaggleHub, and tested with the remaining 92 samples. It uses jointly optimized embeddings and weights, positional encoding, custom transformer architecture, and logits. Several concepts from multivariable calculus and linear algebra were applied to execute the forward and backward passes. 
 
-Given that this model was developed from scratch using limited samples, it is primitive and makes the best predictions from simple, straightforward sentences, similar to the ones you can see in the dataset.
+Given that this model was developed from scratch using limited samples, it makes the best predictions from simple, straightforward sentences, similar to the ones you can see in the dataset.
 
 ## How it Works
 The data was split into training and testing sets, then tokenized. Each token was further lemmatized then mapped to a unique 128-dimension embedding vector. An input sentence can be represented as an embedding matrix, and can subsequently be augmented with positional encoding. The model's architecture itself consists of two consecutive Transformer blocks, each equipped with four-headed self-attention mechanisms, feed-forward networks, and LayerNorm. The final hidden state would pass through a linear layer, which would then transformed into a probability distribution vector using softmax. The index with the highest probabibility would then be mapped to its corresponding sentiment label.  
